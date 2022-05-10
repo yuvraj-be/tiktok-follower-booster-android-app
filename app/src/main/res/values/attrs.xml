@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomNavItem">
+        <attr name="nav_icon" format="reference" />
+        <attr name="nav_title" format="string" />
+    </declare-styleable>
+</resources>

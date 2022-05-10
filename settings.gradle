@@ -1,0 +1,3 @@
+include ':core-module'
+include ':app'
+rootProject.name = "Booster Like"

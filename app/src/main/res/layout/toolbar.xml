@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    tools:showIn="@layout/fragment_explore">
+
+    <TextView
+        android:layout_gravity="end"
+        android:id="@+id/idMyStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/common_padding"
+        android:gravity="top"
+        android:lineSpacingExtra="4sp"
+        android:text="05 ⭐"
+        android:textAppearance="@style/TextAppearance.Small.Bold" />
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nav_tab_1"
+        android:layout_marginStart="@dimen/common_padding"
+        android:textAppearance="@style/TextAppearance.Title" />
+</LinearLayout>

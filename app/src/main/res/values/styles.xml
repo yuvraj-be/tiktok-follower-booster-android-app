@@ -1,0 +1,78 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/bg</item>
+        <item name="alertDialogTheme">@style/MyDialog</item>
+        <item name="dialogTheme">@style/MyDialog</item>
+        <item name="android:alertDialogTheme">@style/MyDialog</item>
+        <item name="android:dialogTheme">@style/MyDialog</item>
+    </style>
+
+    <style name="MyDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:windowAnimationStyle">@style/BottomDialogAnimation</item>
+    </style>
+
+    <style name="LoadingDialog" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">#CCFFFFFF</item>
+    </style>
+
+    <style name="BottomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_bottom_up</item>
+        <item name="android:windowExitAnimation">@anim/anim_bottom_down</item>
+    </style>
+
+    <style name="AppTheme.Splash">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.Main">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
+    </style>
+
+    <style name="TextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="TextAppearance.Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/campton_bold</item>
+    </style>
+
+    <style name="TextAppearance.Primary">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/campton_book</item>
+    </style>
+
+    <style name="TextAppearance.Primary.Bold">
+        <item name="android:fontFamily">@font/campton_bold</item>
+    </style>
+
+    <style name="TextAppearance.Secondary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/campton_book</item>
+    </style>
+
+    <style name="TextAppearance.Secondary.Bold">
+        <item name="android:fontFamily">@font/campton_bold</item>
+    </style>
+
+    <style name="TextAppearance.Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/campton_book</item>
+    </style>
+
+    <style name="TextAppearance.Small.Bold">
+        <item name="android:fontFamily">@font/campton_bold</item>
+    </style>
+</resources>

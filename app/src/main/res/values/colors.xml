@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorNavSelected">#714fff</color>
+    <color name="colorNavUnSelected">#212121</color>
+    <color name="colorBackground">#f5f5f5</color>
+    <color name="colorClearButton">#714fff</color>
+    <color name="colorFollowButton">#ff2593</color>
+    <color name="colorMiddleBackground">#66FFFFFF</color>
+    <color name="colorBottomBackground">#BFFFFFFF</color>
+    <color name="colorTopBackground">#ffffff</color>
+    <color name="colorBlackPrimary">#212121</color>
+    <color name="colorNegativeBackground">#eeeeee</color>
+    <color name="colorPositiveBackground">#ff2e93</color>
+    <color name="colorPositiveBackground2">#4cff2593</color>
+    <color name="colorErrorBackground">#ff0c69</color>
+    <color name="colorBlackSecondary">#adadad</color>
+</resources>

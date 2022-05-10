@@ -1,0 +1,6 @@
+/.idea
+/.gradle
+/build
+/app/develop/release/
+local.properties
+app/product

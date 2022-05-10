@@ -1,0 +1,80 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <include layout="@layout/empty_view"/>
+
+        <app.witwork.boosterlike.common.widget.card.MyCardViewHolder
+            android:id="@+id/cardContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false" />
+
+        <include layout="@layout/toolbar" />
+
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="56dp"
+            android:layout_height="@dimen/height_button_size"
+            android:layout_above="@+id/adViewContainer"
+            android:layout_marginHorizontal="@dimen/common_padding"
+            android:background="@drawable/bg_clear"
+            android:paddingHorizontal="20dp"
+            android:src="@drawable/ic_baseline_clear_24" />
+
+        <app.witwork.boosterlike.common.widget.MyViewWithShadow
+            android:id="@+id/blurredShadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnClear"
+            android:layout_alignBottom="@+id/btnClear"
+            android:layout_marginHorizontal="@dimen/common_padding"
+            android:layout_marginBottom="@dimen/common_padding"
+            android:layout_toEndOf="@+id/btnClear" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button_size"
+            android:layout_alignTop="@+id/btnClear"
+            android:layout_marginHorizontal="@dimen/common_padding"
+            android:layout_toEndOf="@+id/btnClear"
+            app:cardCornerRadius="@dimen/common_radius">
+
+            <LinearLayout
+                android:id="@+id/btnFollow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPositiveBackground"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.133"
+                    android:text="@string/follow_plus_one"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.Small.Bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <FrameLayout
+            android:id="@+id/adViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/common_padding"
+            android:layout_marginVertical="8dp" />
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+

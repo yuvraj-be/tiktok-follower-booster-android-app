@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/common_padding"
+    tools:background="#ffffff">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/campton_bold"
+        android:textAppearance="@style/TextAppearance.Primary"
+        android:textColor="@color/colorBlackPrimary"
+        tools:text="Reward to you" />
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_baseline_clear_24"
+        android:tint="@color/colorBlackPrimary" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="5dp"
+        android:textAppearance="@style/TextAppearance.Secondary"
+        android:textColor="@color/colorBlackSecondary"
+        tools:text="Congratulation! You got 1 more ⭐️ for task completed. Keep moving 🤘🤘🤘 together" />
+
+    <ImageView
+        android:id="@+id/imgDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMessage"
+        android:layout_marginVertical="@dimen/common_padding"
+        tools:src="@drawable/gifbox" />
+
+    <TextView
+        android:id="@+id/tvStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgDescription"
+        android:fontFamily="@font/campton_bold"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlackPrimary"
+        tools:text="+01" />
+
+    <TextView
+        android:id="@+id/btnNegative"
+        android:layout_width="60dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/imgDescription"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/btnPositive"
+        android:background="@drawable/bg_negative"
+        android:fontFamily="@font/campton_bold"
+        android:gravity="center"
+        android:lineSpacingExtra="0.2dp"
+        android:textAppearance="@style/TextAppearance.Small.Bold"
+        android:textColor="@color/colorBlackPrimary"
+        tools:text="Close" />
+
+    <TextView
+        android:id="@+id/btnPositive"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_below="@+id/imgDescription"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_negative"
+        android:backgroundTint="@color/colorPositiveBackground"
+        android:gravity="center"
+        android:lineSpacingExtra="0.2dp"
+        android:paddingHorizontal="20dp"
+        android:textAppearance="@style/TextAppearance.Small.Bold"
+        tools:text="Wallet" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.witwork.boosterlike.common.widget.bottomnav.BottomNavBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomNavBar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    tools:showIn="@layout/fragment_main">
+
+    <app.witwork.boosterlike.common.widget.bottomnav.BottomNavItem
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?selectableItemBackgroundBorderless"
+        app:nav_icon="@drawable/ic_nav_explore"
+        app:nav_title="@string/nav_tab_1" />
+
+    <app.witwork.boosterlike.common.widget.bottomnav.BottomNavItem
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?selectableItemBackgroundBorderless"
+        app:nav_icon="@drawable/ic_nav_buy_star"
+        app:nav_title="@string/nav_tab_2" />
+
+    <app.witwork.boosterlike.common.widget.bottomnav.BottomNavItem
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?selectableItemBackgroundBorderless"
+        app:nav_icon="@drawable/ic_nav_boost"
+        app:nav_title="@string/nav_tab_3" />
+
+    <app.witwork.boosterlike.common.widget.bottomnav.BottomNavItem
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?selectableItemBackgroundBorderless"
+        app:nav_icon="@drawable/ic_nav_profile"
+        app:nav_title="@string/nav_tab_4" />
+</app.witwork.boosterlike.common.widget.bottomnav.BottomNavBar>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:background="@android:color/white"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/dot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignStart="@id/imgIcon"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_oval_red" />
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:src="@drawable/ic_nav_explore" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.2"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.Small.Bold"
+        android:textSize="10sp"
+        tools:ignore="SmallSp"
+        tools:text="@string/nav_tab_1"
+        tools:textColor="@color/colorBlackPrimary" />
+</merge>

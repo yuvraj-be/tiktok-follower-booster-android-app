@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "379286738130",
+    "firebase_url": "https://wit-booster-like.firebaseio.com",
+    "project_id": "wit-booster-like",
+    "storage_bucket": "wit-booster-like.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379286738130:android:e978e68a6b2772a239490b",
+        "android_client_info": {
+          "package_name": "app.witwork.boosterlike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379286738130-2kgq51h8mamjj4as6cagvn76nj0gmao7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.witwork.boosterlike",
+            "certificate_hash": "32ce110adbc3c48f1611ce6236ea854dbe6faa98"
+          }
+        },
+        {
+          "client_id": "379286738130-t29b020tg8c8im6pasevcaf0pcgmth6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1-uH3MFI86WRQVA2Ir3jA7dLwNUd9cXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379286738130-t29b020tg8c8im6pasevcaf0pcgmth6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Booster Like</string>
+    <string name="nav_tab_1">Explore</string>
+    <string name="nav_tab_2">Buy stars</string>
+    <string name="nav_tab_3">Boost</string>
+    <string name="nav_tab_4">Profile</string>
+    <string name="follow_plus_one">follow+1⭐️</string>
+    <string name="display_name">\@%s</string>
+    <string name="dialog_title_reward">Reward to you</string>
+    <string name="dialog_message_reward">Congratulation! You got 1 more ⭐️ for task completed. Keep moving 🤘🤘🤘 together</string>
+    <string name="close">Close</string>
+    <string name="wallet">Wallet</string>
+    <string name="dialog_title_bought_star">Star Rain Sent</string>
+    <string name="dialog_message_bought_star">You are awesome 🤘🤘🤘. Please review your wallet and boost your followers now 🚀</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="login_title">Let’s start</string>
+    <string name="login_desc">You need to enter your tiktok username to sync your data, and then explore the magic</string>
+    <string name="tiktok_username">Tiktok username</string>
+    <string name="username">USERNAME</string>
+    <string name="sign_in">sign in</string>
+    <string name="your_tiktok_username_is_not_existing">Your Tiktok username is not existing</string>
+    <string name="plus_50_stars">+50⭐</string>
+    <string name="pack_one">Pack 1</string>
+    <string name="price_one">$1.99</string>
+    <string name="buy_now">Buy now</string>
+    <string name="price_two">$9.99</string>
+    <string name="pack_two">Pack 2</string>
+    <string name="plus_350_stars">+350⭐️</string>
+    <string name="pack_three">Pack 3</string>
+    <string name="price_three">$19.99</string>
+    <string name="plus_1000_stars">1000⭐️</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="my_wallet">My wallet</string>
+    <string name="earn_free">Earn free ⭐️</string>
+    <string name="watch_a_video_ads">Watch a video Ads</string>
+    <string name="follow_us_on_tiktok">Follow us on Tiktok</string>
+    <string name="we_are_a_digital">We are a digital agency specializing in websites, SAAS, mobile applications, branding and online marketing. Working under a standardized design process, we particularly use a user-centered design technique to explore users’ true needs, collaborate with understanding of company strategies as well as revenue models to create possible and measurable solutions. Please contact us via information below:</string>
+    <string name="about_us">about us</string>
+    <string name="ready_to_boost">ready to boost</string>
+    <string name="use_now">use now</string>
+    <string name="you_need">you need</string>
+    <string name="profile">Profile</string>
+    <string name="don_t_take_your_eyes">Don’t take your’eyes off from your profile. Your number of followers will rocket soon 🚀🚀🚀</string>
+    <string name="followers_are_coming">Followers are coming</string>
+    <string name="welcome_to_witbooster">Welcome to witBooster</string>
+    <string name="got_5_stars">Congratulation! You got 05⭐️ for the first access. Let explore awesome features</string>
+    <string name="next">next</string>
+    <string name="no_data">Other users are coming. Please come back in the next days</string>
+</resources>

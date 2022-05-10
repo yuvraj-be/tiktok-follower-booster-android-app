@@ -1,0 +1,121 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.firebase.crashlytics'
+
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/'}
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.8'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "app.witwork.boosterlike"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 13
+        versionName "1.0.13"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                onesignal_app_id: '2218f440-2a21-4ef4-b5c5-fec8b8cfc81f',
+                onesignal_google_project_number: 'REMOTE'
+        ]
+
+        resValue("string", "admob_app_id", "ca-app-pub-1051217842834339~3454102650")
+        resValue("string", "base_url", "http://192.168.1.1:5000")
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'key0'
+            keyPassword 'android'
+            storeFile file('KEY_STORE/release.jks')
+            storePassword 'android'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "BoosterLike_${defaultConfig.versionName}.apk"
+                }
+            }
+        }
+    }
+}
+
+ext.dagger2_version = "2.25.2"
+ext.lottieVersion = "3.4.4"
+ext.eventbusVersion = "3.2.0"
+ext.billing_version = "3.0.0"
+ext.work_version = "2.1.0"
+ext.glide_version = "4.11.0"
+ext.billing_version = "3.0.0"
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    //noinspection GradleDependency
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation project(path: ':core-module')
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.google.android.material:material:1.3.0-alpha03'
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+    implementation "org.greenrobot:eventbus:$eventbusVersion"
+    kapt "com.google.dagger:dagger-compiler:$dagger2_version"
+
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    implementation "com.github.bumptech.glide:annotations:$glide_version"
+    implementation "com.github.bumptech.glide:okhttp3-integration:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+
+    implementation "com.android.billingclient:billing-ktx:$billing_version"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    // lifecycle
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0-alpha07'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.0-alpha07'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0-alpha07'
+
+    //ads
+
+    implementation "com.google.firebase:firebase-ads:19.5.0"
+
+    implementation 'com.github.nisrulz:easydeviceinfo:2.4.1'
+    implementation 'com.onesignal:OneSignal:3.15.3'
+
+    // Import the Firebase BoM (see: https://firebase.google.com/docs/android/learn-more#bom)
+    implementation platform('com.google.firebase:firebase-bom:26.1.1')
+    // Firebase Crashlytics (Kotlin)
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+}
+apply plugin: 'com.google.gms.google-services'

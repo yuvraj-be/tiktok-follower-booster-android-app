@@ -1,0 +1,176 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="16dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/campton_bold"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/login_title"
+        android:textColor="@color/colorTopBackground"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:lineHeight="16dp"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:fontFamily="@font/campton_book"
+        android:textColor="#b3ffffff"
+        android:lineSpacingExtra="4sp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:minWidth="382dp"
+        android:layout_marginTop="8.7dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:minWidth="382dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_input"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="13dp"
+        android:paddingVertical="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/campton_book"
+                android:letterSpacing="0.16"
+                android:lineSpacingExtra="1.3sp"
+                android:text="@string/username"
+                android:textColor="#adadad"
+                android:textSize="9sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/campton_book"
+                    android:letterSpacing="0.14"
+                    android:lineSpacingExtra="4sp"
+                    android:text="\@"
+                    android:textAlignment="center"
+                    android:textColor="#212121"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/idInputLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorTopBackground"
+                    android:fontFamily="@font/campton_book"
+                    android:hint="@string/tiktok_username"
+                    android:letterSpacing="0.03"
+                    android:paddingStart="4dp"
+                    android:textColorHint="@color/colorBlackSecondary"
+                    android:textColor="@color/colorBlackPrimary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/colorTopBackground"
+            android:src="@drawable/ic_cancel" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:minWidth="382dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn_login"
+        android:fontFamily="@font/campton_book"
+        android:gravity="center"
+        android:letterSpacing="0.15"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/sign_in"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/idErrorLogin"
+        android:visibility="gone"
+        android:paddingHorizontal="13dp"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:minWidth="382dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_error_message"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin">
+        <ImageView
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_moon_shape"
+            android:layout_width="32dp"
+            android:layout_height="32dp"/>
+        <TextView
+            android:layout_weight="1"
+            android:fontFamily="@font/campton_book"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/your_tiktok_username_is_not_existing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/idLoginLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
